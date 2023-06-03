@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        45deg,
+        #6257ff,
+        #4c41e1
+    );
+}
+
+.container {
+    width: 400px;
+    height: min-content;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.container .icon {
+    display: grid;
+    place-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    background: #4135d6;
+}
+
+.container .icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.container h4 {
+    font-size: 22px;
+    color: #121212;
+}
+
+.container form {
+    width: 100%;
+}
+
+.container form .form-group {
+    width: 100%;
+    margin: 30px 0 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.container form input {
+    width: 56px;
+    height: 56px;
+    margin: 0 8px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 3px;
+    color: transparent;
+    background: #f0f0f0;
+    text-shadow: 0 0 0 #000;
+    transition: .1s ease-in-out;
+}
+
+.container form input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.container form input:focus {
+    outline-offset: 3px;
+    outline: 2px solid #4135d6;
+}
+
+.container form button {
+    cursor: pointer;
+    color: #fff;
+    background: #4135d6;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+    border-radius: 8px;
+    letter-spacing: .5;
+    pointer-events: none;
+    opacity: .8;
+    transition: .3s;
+}
+
+.container form button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container form button:hover {
+    background: #4035d6e9;
+}
